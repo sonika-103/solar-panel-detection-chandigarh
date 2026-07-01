@@ -4,6 +4,27 @@
 
 This project aims to identify rooftop solar panels from satellite imagery and map them to residential house plots to analyze solar energy adoption within selected sectors of Chandigarh. A Detectron2-based deep learning model is used for solar panel detection, followed by geospatial analysis to estimate the panel locations and associate them with individual properties.
 
+## Project Result
+
+<p align="center">
+  <img src="Solar_panels_ch_sec_4.png" width="900">
+</p>
+
+<p align="center">
+  <em>Solar Panel Detection and House-Level Mapping – Chandigarh Sector 4</em>
+</p>
+
+### Result Interpretation
+
+- **Blue polygons** represent individual house boundaries.
+- **Green labels** indicate the number of rooftop solar panels detected on each property.
+- Only houses with one or more detected solar panels are labeled.
+- Solar panel detections were converted from image coordinates to geographic coordinates and mapped to residential plots using GIS analysis.
+
+This output demonstrates the complete end-to-end workflow, from satellite imagery collection and solar panel detection to geospatial mapping and house-level solar adoption analysis.
+
+---
+
 ## Workflow
 
 ### Step 1: Area of Interest (AOI) Creation
@@ -71,6 +92,7 @@ Contains:
 * Latitude and longitude of detected panel centroids
 * Solar panel to house-plot mapping
 * Geospatial analysis of solar energy adoption within the selected Chandigarh sectors
+
 
 ## Applications
 
